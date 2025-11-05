@@ -1,0 +1,115 @@
+{
+  "flipkartOfferApiResponse": {
+    "paymentOptions": {
+      "items": [
+        {
+          "type": "OFFER_LIST",
+          "data": {
+            "offerSummary": {
+              "title": "5% Cashback",
+              "subTitle": "Claim now with payment offers",
+              "iconsInfo": {
+                "remainingOffersCount": 3,
+                "icons": [
+                  "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/green-offer-tag.svg",
+                  "https://static-assets-web.flixcart.com/apex-static/images/payments/upi/paytm-logo.svg"
+                ]
+              }
+            },
+            "offers": {
+              "headerTitle": "Offers on online payment",
+              "offerList": [
+                {
+                  "provider": [],
+                  "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/green-offer-tag.svg",
+                  "offerText": {
+                    "text": "Get ₹50 cashback"
+                  },
+                  "offerDescription": {
+                    "type": "tenure.detail.offer.terms.conditions",
+                    "tncText": "Terms and conditions",
+                    "id": "FPO251101120224Z1GF5",
+                    "text": "Up To ₹50 Instant Cashback on BHIM Payments App. Min Order Value ₹199. Offer Valid Once Per User"
+                  }
+                },
+                {
+                  "provider": [],
+                  "logo": "https://static-assets-web.flixcart.com/apex-static/images/payments/upi/paytm-logo.svg",
+                  "offerText": {
+                    "text": "Get ₹10 cashback"
+                  },
+                  "offerDescription": {
+                    "type": "tenure.detail.offer.terms.conditions",
+                    "tncText": "Terms and conditions",
+                    "id": "FPO251101113635MQZQ8",
+                    "text": "Flat ₹10 Instant Cashback on Paytm UPI paymen"
+                  }
+                },
+                {
+                  "provider": ["FLIPKARTAXISBANK"],
+                  "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/banks/AXIS.svg",
+                  "offerText": {
+                    "text": "Get 5% cashback"
+                  },
+                  "offerDescription": {
+                    "type": "tenure.detail.offer.terms.conditions",
+                    "tncText": "Terms and conditions",
+                    "id": "FPO251103124654ZOVCB",
+                    "text": "5% cashback on Axis Bank Flipkart Debit Card up to ₹750"
+                  }
+                },
+                {
+                  "provider": ["FLIPKARTAXISBANK"],
+                  "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/banks/AXIS.svg",
+                  "offerText": {
+                    "text": "Get 5% cashback"
+                  },
+                  "offerDescription": {
+                    "type": "tenure.detail.offer.terms.conditions",
+                    "tncText": "Terms and conditions",
+                    "id": "FPO2509161258586WXGR",
+                    "text": "5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter"
+                  }
+                },
+                {
+                  "provider": ["FLIPKARTSBI"],
+                  "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/banks/SBI.svg",
+                  "offerText": {
+                    "text": "Get 5% cashback"
+                  },
+                  "offerDescription": {
+                    "type": "tenure.detail.offer.terms.conditions",
+                    "tncText": "Terms and conditions",
+                    "id": "FPO251103123615YLG67",
+                    "text": "5% cashback on Flipkart SBI Credit Card upto ₹4,000 per calendar quarter"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "PAYMENT_OPTION",
+          "data": {
+            "instrumentType": "UPI",
+            "applicable": true
+          }
+        },
+        {
+          "type": "PAYMENT_OPTION",
+          "data": {
+            "instrumentType": "CREDIT",
+            "applicable": true
+          }
+        },
+        {
+          "type": "PAYMENT_OPTION",
+          "data": {
+            "instrumentType": "EMI_OPTIONS",
+            "applicable": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "offers": [
+    {
+      "offerId": "FPO251101120224Z1GF5",
+      "providers": [],
+      "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/green-offer-tag.svg",
+      "offerText": "Get ₹50 cashback",
+      "offerDescription": "Up To ₹50 Instant Cashback on BHIM Payments App. Min Order Value ₹199. Offer Valid Once Per User",
+      "offerTerms": "Terms and conditions",
+      "discountType": "CASHBACK",
+      "discountValue": 50,
+      "minAmount": 199,
+      "maxDiscount": 50,
+      "paymentInstruments": [
+        "UPI_COLLECT"
+      ]
+    },
+    {
+      "offerId": "FPO251101113635MQZQ8",
+      "providers": [],
+      "logo": "https://static-assets-web.flixcart.com/apex-static/images/payments/upi/paytm-logo.svg",
+      "offerText": "Get ₹10 cashback",
+      "offerDescription": "Flat ₹10 Instant Cashback on Paytm UPI paymen",
+      "offerTerms": "Terms and conditions",
+      "discountType": "CASHBACK",
+      "discountValue": 10,
+      "minAmount": 0,
+      "maxDiscount": null,
+      "paymentInstruments": [
+        "UPI_COLLECT"
+      ]
+    },
+    {
+      "offerId": "FPO251103124654ZOVCB",
+      "providers": [
+        "FLIPKARTAXISBANK"
+      ],
+      "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/banks/AXIS.svg",
+      "offerText": "Get 5% cashback",
+      "offerDescription": "5% cashback on Axis Bank Flipkart Debit Card up to ₹750",
+      "offerTerms": "Terms and conditions",
+      "discountType": "PERCENTAGE",
+      "discountValue": 5,
+      "minAmount": 0,
+      "maxDiscount": 750,
+      "paymentInstruments": [
+        "CREDIT"
+      ]
+    },
+    {
+      "offerId": "FPO2509161258586WXGR",
+      "providers": [
+        "FLIPKARTAXISBANK"
+      ],
+      "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/banks/AXIS.svg",
+      "offerText": "Get 5% cashback",
+      "offerDescription": "5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter",
+      "offerTerms": "Terms and conditions",
+      "discountType": "PERCENTAGE",
+      "discountValue": 5,
+      "minAmount": 0,
+      "maxDiscount": 4000,
+      "paymentInstruments": [
+        "CREDIT"
+      ]
+    },
+    {
+      "offerId": "FPO251103123615YLG67",
+      "providers": [
+        "FLIPKARTSBI"
+      ],
+      "logo": "/FK_STATIC_ASSET/fk-p-linchpin-web/fk-gringotts/images/banks/SBI.svg",
+      "offerText": "Get 5% cashback",
+      "offerDescription": "5% cashback on Flipkart SBI Credit Card upto ₹4,000 per calendar quarter",
+      "offerTerms": "Terms and conditions",
+      "discountType": "PERCENTAGE",
+      "discountValue": 5,
+      "minAmount": 0,
+      "maxDiscount": 4000,
+      "paymentInstruments": []
+    }
+  ]
+}
