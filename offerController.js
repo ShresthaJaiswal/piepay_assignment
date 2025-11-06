@@ -53,7 +53,6 @@ class OfferController {
     try {
       const { amountToPay, bankName, paymentInstrument } = req.query;
 
-      // Validate required parameters
       if (!amountToPay) {
         return res.status(400).json({
           error: 'amountToPay is required'
@@ -74,7 +73,6 @@ class OfferController {
         });
       }
 
-      // Get offers based on bank and optionally payment instrument (Part 4)
       let offers;
       if (paymentInstrument) {
         // Part 4: Filter by both bank and payment instrument

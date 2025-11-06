@@ -54,7 +54,6 @@ class Database {
   getOffersByBank(bankName) {
     const data = this.readData();
     return data.offers.filter(offer => {
-      // Check if the offer's providers include the bank
       if (!offer.providers || offer.providers.length === 0) {
         // Generic offers (no specific bank)
         return false;
@@ -82,7 +81,7 @@ class Database {
     });
   }
 
-  // Clear all offers (useful for testing)
+  // Clear all offers (for testing)
   clearAllOffers() {
     const data = { offers: [] };
     this.writeData(data);

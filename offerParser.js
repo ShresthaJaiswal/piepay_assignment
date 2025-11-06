@@ -1,9 +1,5 @@
 class OfferParser {
-  /**
-   * Extract offers from Flipkart API response
-   * @param {Object} flipkartResponse - The complete Flipkart API response
-   * @returns {Array} Array of parsed offers
-   */
+  // Extract offers from Flipkart API response
   parseOffers(flipkartResponse) {
     const offers = [];
     
@@ -38,7 +34,7 @@ class OfferParser {
         }
       });
 
-      // Also extract payment instruments information for Part 4
+      // Also extract payment instruments information
       const paymentInstruments = this.extractPaymentInstruments(paymentOptions.items);
       
       // Map offers to their applicable payment instruments
@@ -53,11 +49,7 @@ class OfferParser {
     return offers;
   }
 
-  /**
-   * Parse individual offer
-   * @param {Object} offer - Single offer object from Flipkart response
-   * @returns {Object} Parsed offer
-   */
+  // Parse individual offer
   parseIndividualOffer(offer) {
     try {
       const offerId = offer.offerDescription?.id;
@@ -85,9 +77,7 @@ class OfferParser {
     }
   }
 
-  /**
-   * Determine discount type (PERCENTAGE, FLAT, CASHBACK)
-   */
+  // Determine discount type
   determineDiscountType(offerText) {
     if (!offerText) return 'UNKNOWN';
     
@@ -104,9 +94,7 @@ class OfferParser {
     return 'UNKNOWN';
   }
 
-  /**
-   * Extract discount value from offer text
-   */
+  // Extract discount value from offer text
   extractDiscountValue(offerText, offerDescription) {
     const text = (offerText + ' ' + offerDescription).toLowerCase();
     
@@ -125,9 +113,7 @@ class OfferParser {
     return 0;
   }
 
-  /**
-   * Extract minimum amount from offer description
-   */
+  // Extract minimum amount from offer description
   extractMinAmount(description) {
     if (!description) return 0;
     
@@ -139,9 +125,7 @@ class OfferParser {
     return 0;
   }
 
-  /**
-   * Extract maximum discount from offer description
-   */
+  // Extract maximum discount from offer description
   extractMaxDiscount(description) {
     if (!description) return null;
     
@@ -153,9 +137,7 @@ class OfferParser {
     return null;
   }
 
-  /**
-   * Extract payment instruments from payment options (Part 4)
-   */
+  // Extract payment instruments from payment options
   extractPaymentInstruments(items) {
     const instruments = [];
     
@@ -175,9 +157,7 @@ class OfferParser {
     return instruments;
   }
 
-  /**
-   * Extract bank codes from payment option data
-   */
+  // Extract bank codes from payment option data
   extractBankCodes(paymentData) {
     const bankCodes = [];
     
@@ -192,9 +172,7 @@ class OfferParser {
     return bankCodes;
   }
 
-  /**
-   * Determine which payment instruments an offer is applicable for
-   */
+  // Determine which payment instruments an offer is applicable for
   determinePaymentInstruments(offer, paymentInstruments) {
     const applicableInstruments = [];
     
@@ -210,7 +188,6 @@ class OfferParser {
     }
     
     // Check if EMI is available for this offer
-    // (This is a simplified logic - in reality, it's more complex)
     const hasEMI = paymentInstruments.some(
       inst => inst.type === 'EMI_OPTIONS' && inst.applicable
     );
